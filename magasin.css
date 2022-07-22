@@ -1,0 +1,330 @@
+
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    background-image: url("img/fond-home.png");
+    background-repeat: repeat;
+    background-size: 100%;
+    margin: 0px;
+
+}
+/* Mise en forme header */
+@font-face {
+    font-family: "Title Font";
+    src: url('ressources/pirate_of_the_seaside-webfont.woff2') format('woff2'),
+         url('ressources/pirate_of_the_seaside-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "H1 Font";
+    src:url("/ressources/Heart\ Blues.ttf");
+}
+
+/*HEADER ET NAVBAR*/
+
+/*Création d'un background pour le header contenant la navbar*/
+header{
+    background-color: rgba(163, 163, 255,0.7);
+    padding-top: 5px;
+}
+/*On aligne les éléments avec le display flex*/ 
+.navbar{
+    width:100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+/*Transition + zoom avec la fonction hover*/
+.icon{
+    width: 60px;
+    transition: 0.2s;
+    padding-left:30px;
+}
+.icon:last-of-type{
+    padding-right: 40px;
+}
+
+
+#logo{
+    width: 20%;
+    margin-left: 40px;
+}
+
+/*hover quand on passe sur les icons : grossissement*/
+.icon:hover{
+    width: 70px;
+    transition: 0.2s;
+}
+
+
+
+#bouton-acceder,
+#bouton-vider{
+    text-decoration: none;
+    font-size: 1.1em;
+    color: black;
+    margin: 5px;
+    padding: 5px;
+    cursor: pointer;
+}
+#bouton-acceder{
+    background-color:rgb(163, 163, 255);
+}
+#bouton-vider{
+    background-color: lightgray;
+}
+
+
+#panier {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    background-color: whitesmoke;
+    width: 200px;
+    position: fixed;
+    right: 0;
+    border-radius: 7px;
+    padding: 10px;
+    margin-top: 20px;
+
+}
+#panier input {
+    width:fit-content;
+    margin: auto;
+}
+
+.intro{
+    background-image: url("img/homme-bonbon-intro.png");
+    background-size: cover;
+    padding-top: 100px;
+    padding-bottom: 200px;
+}
+
+.texte_intro{
+    text-align: center;
+}
+
+.texte_intro h1{
+    font-family: "H1 Font";
+    color: white;
+    text-transform: uppercase;
+    text-shadow: #ff627c 4px 4px;
+    font-size: 5em;
+    margin-top: 100px;
+}
+
+.texte_intro h3{
+    color:white;
+    font-style: italic;
+    font-size: 2em;
+    line-height: 2em;
+    text-shadow: #ff627c 1px 2px;
+    text-align: center;
+}
+
+button img{
+    width: 16px;
+    height: 16px;
+}
+
+/* Déclaration du conteneur des articles du magasin */
+.articles-magasin { 
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin: auto;
+}
+.ligne {
+    display: flex;
+    justify-content: space-evenly;
+    vertical-align: auto;
+    width: 100%;
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
+#promo{
+    display: flex;
+    width: fit-content;
+}
+
+#promo img{
+    padding: auto;
+    
+}
+
+.article-droite{
+    margin: 20px;
+    font-style: italic;
+    text-align: center;
+}
+
+.article-gauche{
+    padding: auto;
+    justify-items: center;
+}
+
+/* Déclaration de la base de l'article */
+.article-mag {
+    width: 300px;
+    height: 400px;
+    padding: 20px;
+    background-color: white;
+    border-radius: 20px;
+    box-shadow: 0px 0px 5px 5px white;
+    margin: 30px;
+}
+/* Création du bandeau en bas de l'article pour y mettre les infos nécessaires à la vente */
+.article-detail {
+    bottom: 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 30px;
+    padding-left: 5%;
+    padding-right: 5%;
+}
+.article-quantite {
+    width: 60px;
+    text-align: center;
+    background-color: beige;
+    border-style: none;
+    padding-top: 6px;
+    padding-bottom: 3px;
+}
+.article-prix {
+    font-size: 18px;
+    font-weight: 800;
+    flex: 1;
+}
+/* Déclaration d'une classe pour les articles en promotion */
+.article-mag img {
+    width: 100%;
+}
+#goldbears img {
+    width: 100%;
+}
+.promo {
+    width: 350px;
+    text-align: justify;
+    height: fit-content;
+}
+#prix-casse {
+    text-decoration: line-through;
+}
+#prix-promo {
+    font-size: 35px;
+    color: red;
+}
+/* Mise en page footer */
+footer{
+    align-self: center;
+    background-color: #a3a3ff;
+    align-items: center;
+    margin-top: 150px;
+    padding-top: 15px;
+    text-align: center;
+    color: white;
+    padding-bottom: 30px;
+    padding-left: 50px;
+    padding-right: 50px;
+    line-height: 2.5em;
+}
+#conteneur{
+    display: flex;
+    align-items:stretch;
+}
+#conteneur > div{
+    width: 100%;
+}
+#reseaux img{
+    width: 10%;
+    cursor: pointer;
+}
+footer h4{
+    font-size: 1.2em;
+    text-shadow: black 2px 2px;
+
+}
+#mentions a,
+#reseaux a{
+    color: white;
+    text-decoration: none;
+}
+#mentions a:hover,
+#reseaux a:hover{
+    color: pink;
+}
+#realisation{
+    margin-top: 35px;
+}
+
+@media screen and (max-width: 775px) {
+    #logo{
+        display: none;
+    }
+    .articles-magasin { 
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        margin: auto;
+    }
+    .promo {
+        width: 230px;
+        padding: 10px;
+        background-color: white;
+        border-radius: 20px;
+        box-shadow: 0px 0px 5px 5px white;
+    }
+    #promo-text {
+        display: none;
+    }
+    .ligne {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        vertical-align: auto;
+        width: 100%;
+        margin: 0px;
+    }
+    .article-mag {
+        width: 230px;
+        padding: 10px;
+        margin: 30px;
+        background-color: white;
+        border-radius: 20px;
+        box-shadow: 0px 0px 5px 5px white;
+    }
+    footer {
+        margin-top: 10px;
+    }
+    #conteneur {
+        display: flex;
+        flex-direction: column;
+    }
+    .header-icone {
+        display: none;
+    }
+    header div{
+        padding: 0px;
+    }
+    #title{
+        font-size: 4em;
+        font-family: "Title Font";
+        color: white;
+        margin-top: 0px;
+        margin-left: 0px;
+    }
+    #panier {
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+
+    }
+    #panier input {
+        width:fit-content;
+        margin: auto;
+    }
+}

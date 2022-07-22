@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="team.css">
+    <title>Candyshop - Team</title>
+    <link rel="icon" type="image/x-icon" href="/img/logo unicorn.png">
+</head>
+
+<body>
+    <header class="header">
+        <div class="navbar">
+            <a href="index.html"><img id="logo" class="icon" name="logo" src="img/logo-final.png" alt=""></a>
+            <a href="index.html"><img class="icon" name="home" src="img/home.png" alt=""></a>
+            <a href="team.html"><img class="icon" name="team" src="img/team.png" alt=""></a>
+            <a href="panier.html"><img class="icon"name="panier" src="img/basket.png" alt=""></a>
+        </div>
+    </header>
+
+    <main class="main">
+        <!--création d'un template-->
+        <div id="template" class="invisible vierge">
+            <img class="" src="img/4.png" alt="">
+            <div contenteditable="true">
+                <h3>Prénom Nom</h2>
+                <h4>Titre</h4>
+                <p class="about">Ajouter une description ici</p>
+            </div>
+        </div>
+        <!---->
+        <div class="texte">
+            <h2>La fine équipe.</h2>
+            <p>3 mecs fans de bonbecs qui ont eu envie de changer le game de l'industrie de vos douceurs préférées. 🍭</p>
+            <p>Etienne, Julien et Vincent, trois loustiques atypiques qui ont eu envie de se lancer dans une aventure de folie.</p>
+            <p>Découvrez la team derrière cette belle histoire ! 👀</p>
+            
+
+        </div>
+        <div id="button">
+            <button id="button_show" onclick="duplicate()">Ajouter un membre</button>
+            <button id="button_remove" onclick=button_remove()>Supprimer un membre</button>    
+        </div>
+        <section id="fiches">
+            <div class="vierge">
+                <img class="image" src="img/2.png" alt=" ">
+                <div contenteditable="true">
+                    <h3>Etienne Tessier</h2>
+                    <h4>Petit génie</h4>
+                    <p class="about">Diplômé à seulement 19 ans d'HEC Paris, il lance son premier business dans l'achat-revente de lunettes de soleil. 3 ans après, il revend son business et s'intéresse au monde des sucreries. C'est l'amour fou.
+                    <br>
+                    Il se charge de développer de nouvelles recettes pour staisfaire les papiles des petits et des grands, en respectant au maximum le 100% Made in France ! 🇫🇷
+                    Il est fan de Jimmy Neutron, mais il ne l'assume pas...
+                    <br>
+                    <br>
+                    Son mentra ? <i><strong>Tout vient à point à qui sait le prendre</strong></i>
+                    </p>
+                </div>
+            </div>
+            <div class="vierge">
+                <img class="image" src="img/3.png" alt=" ">
+                <div contenteditable="true">
+                    <h3>Julien Thibault</h2>
+                    <h4>Notre Floki local</h4>
+                    <p class="about">Une brut en vente. Il pourrait vendre un peigne à un chauve (lol). Etienne est venu le débaucher alors qu'il venait de closer un deal entre McKinsey et l'État au sujet de conseil ou je ne sais plus trop quoi.
+                    Fan incontastable de la série Vikings et de tartes aux pommes, c'est notre pilier central.
+                    <br>
+                    <br>
+                    Son mentra ? <i><strong>Rien ne sert de courir, il faut partir à point</strong></i>
+
+                    </p>
+                </div>
+            </div>
+            <div class="vierge">
+                <img class="image" src="img/1.png" alt=" ">
+                <div contenteditable="true">
+                    <h3>Vincent Péchon</h2>
+                    <h4>Hipster gourmand</h4>
+                    <p class="about">Lui aussi débauché par Etienne alors qu'il développait la com' d'une startup dans les crypto (Sorare ou un truc comme ça).
+                    <br>
+                    Son style : un bobo hispter en sweat qui boit du thé bio et roule en trotinette éléctrique, plus cliché, tu meurs.
+                    <br>
+                    <br>
+                    Son mentra ? <i><strong>Il est bo le lavabo</strong></i>
+                    </p>
+                </div>
+            </div>
+        </section>
+
+    </main>
+    <script src="script.js"></script>
+    
+    <footer class="footer">
+        <section id="conteneur">
+            <div id="contact">
+                <h4>Venez nous voir !</h4>
+                <p>32 Avenue Marcel Dassault
+                    <br>
+                    37200 TOURS
+                </p>
+            </div>
+            <div id="mentions">
+                <h4>Mentions légales</h4>
+                <a href="#">Conditions générales de vente</a>
+                <br>
+                <a href="#">Politique de confidentialité</a>
+            </div>
+            <div id="reseaux">
+                <h4>Nous contacter</h4>
+                <a href="https://youtu.be/SRcnnId15BA?t=21" target="blank"><img src="img/yt.blanc.png" alt="Youtube"></a>
+                <a href="https://www.facebook.com/" target="blank"><img src="img/fb.blanc.png" alt="Facebook"></a>
+                <a href="https://twitter.com/" target="blank"><img src="img/twitter.blanc.png" alt="Twitter"></a>
+            </div>
+            <div id="realisation">
+                Made with 💜 by Etienne, Julien & Vincent - © 2022
+            </div>
+        </section>
+    </footer>
+</body>
+
+
+</html>

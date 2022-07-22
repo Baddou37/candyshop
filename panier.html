@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="fr">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="panier.css">
+        <title>Candyshop - Panier</title>
+    <link rel="icon" type="image/x-icon" href="/img/logo unicorn.png">
+    <link rel="stylesheet" href="panier.css">
+    </head>
+    <header class="header">
+        <div class="navbar">
+            <a href="index.html"><img id="logo" class="icon" name="logo" src="img/logo-final.png" alt=""></a>
+            <a href="index.html"><img class="icon" name="home" src="img/home.png" alt=""></a>
+            <a href="team.html"><img class="icon" name="team" src="img/team.png" alt=""></a>
+            <a href="panier.html"><img class="icon"name="panier" src="img/basket.png" alt=""></a>
+        </div>
+    </header>
+    <body>
+        <div class="bloc_page">
+            <div class="container">
+                <h1>Votre séléction</h1>
+                    <form method="POST" id="form">
+                        <div class="div">
+                            <span class="nom">
+                                <label for="arlequin">Arlequin :</label>
+                            </span>
+                            <span class="prix">
+                                <span id="prix_arlequin">2.49</span><span> €</span>
+                            </span>
+                            <span class="quantite">
+                                <input class= "boite" type="number" id="arlequin" name="arlequin" min="0" max="99" placeholder="max 99">
+                            </span>
+                            <span class="fin">
+                                <span style="padding-left : 5px" id="totalpa"></span><span></span>
+                                <button class="button_reset"id="resetArlequin">X</button>
+                            </span>
+                        </div>
+                        <div class="div">
+                            <span class="nom">
+                                <label for="licorne">Licorne :</label>
+                            </span>
+
+                            <span class="prix">
+                                <span id="prix_licorne">9.99</span><span> €</span>
+                            </span>
+
+                            <span class="quantite">
+                                <input class= "boite" type="number" id="licorne" name="licorne" min="0" max="99" placeholder="max 99">
+                            </span>
+
+                            <span class="fin">
+                                <span style="padding-left : 5px" id="totalpl"></span><span></span>
+                                <button class="button_reset"id="resetLicorne">X</button>
+                            </span>
+                        </div>
+                        <div class="div">
+                            <span class="nom">
+                                <label for="chamallows">Chamallows :</label>
+                            </span>
+
+                            <span class="prix">
+                                <span id="prix_chamallows">3.49</span><span> €</span>
+                            </span>
+                            <span class="quantite">
+                                <input class= "boite" type="number" id="chamallows" name="chamallows" min="0" max="99" placeholder="max 99">
+                            </span>
+                            <span class="fin">
+                                <span style="padding-left : 5px" id="totalpc"></span><span></span>
+                                <button class="button_reset"id="resetChamallows">X</button>
+                            </span>
+                        </div>
+                        <div class="div">
+                            <span class="nom">
+                                <label for="goldbear">Ourson d'Or :</label>
+                            </span>
+                            <span class="prix">
+                                <span id="prix_goldbear">1.49</span><span> €</span>
+                            </span>
+                            <span class="quantite">
+                                <input class= "boite" type="number" id="goldbears" name="goldbears" min="0" max="99" placeholder="max 99">
+                            </span>
+
+                            <span class="fin">
+                                <span style="padding-left : 5px" id="totalpg"></span><span></span>
+                                <button class="button_reset"id="resetGoldbear">X</button>
+                            </span>
+                        </div>
+                        <div class="div">
+                            <span class="nom">
+                                <label for="malabar">Malabar :</label>
+                            </span>
+                            <span class="prix">
+                                <span id="prix_malabar">2.49</span><span> €</span>
+                            </span>
+                            <span class="quantite">
+                                <input class= "boite" type="number" id="malabar" name="malabar" min="0" max="99" placeholder="max 99">
+                            </span>
+                            <span class="fin">
+                                <span style="padding-left : 5px" id="totalpm"></span>
+                                <button class="button_reset"id="resetMalabar">X</button>
+                            </span>
+                        </div>
+                        <div class="div">
+                            <span class="nom">
+                                <label for="werthers">Werther'S Original :</label>
+                            </span>
+                            <span class="prix">
+                                <span id="prix_werthers">4.49</span><span> €</span>
+                            </span>
+                            <span class="quantite">
+                                <input class= "boite" type="number" id="werthers" name="werthers" min="0" max="99" placeholder="max 99">
+                            </span>
+
+                            <span class="fin">
+                                <span style="padding-left : 5px" id="totalpw"></span>
+                                <button class="button_reset" id="resetWerthers">X</button>
+                            </span>
+                        </div>
+
+                        <div>Total de votre séléction :<span id="total_selection"></span></div>
+
+                        <div>Frais de port : <span id="fdp"></span>
+                        </div>
+
+                        <div>Total de la commande :<span id="total_panier"></span>
+                        </div>
+
+                        <div class="end_panier">
+                            <div>
+                                <div><input type="text" placeholder="Code de réduction" id="reduc">
+                                    <button type="button" class="button_panier" id="button_reduc">Valider</button>
+                                    <p id="montant_reduc"></p>
+                                    <div id="montant_reduction"></div>
+                                </div>
+                            
+                                <div>
+                                    <button type="reset" class="button_panier" id="button_clear" ><span>Vider le panier</span></button>
+                                    <a href="https://www.youtube.com/watch?v=F57P9C4SAW4" target="_blank">
+                                        <button type="button" class="button_panier" id="button_commande" class="button_commande">
+                                            <span>Valider la commande</span>
+                                        </button>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+            
+                    </form>
+            </div>
+            </div>
+            
+            <script src="panier.js"> </script>
+            
+        </body>
+        <footer class="footer">
+            <section id="conteneur">
+                <div id="contact">
+                    <h4>Venez nous voir !</h4>
+                    <p>32 Avenue Marcel Dassault
+                        <br>
+                        37200 TOURS
+                    </p>
+                </div>
+                <div id="mentions">
+                    <h4>Mentions légales</h4>
+                    <a href="#">Conditions générales de vente</a>
+                    <br>
+                    <a href="#">Politique de confidentialité</a>
+                </div>
+                <div id="reseaux">
+                    <h4>Nous contacter</h4>
+                    <a href="https://youtu.be/SRcnnId15BA?t=21" target="blank"><img src="img/yt.blanc.png" alt="Youtube"></a>
+                    <a href="https://www.facebook.com/" target="blank"><img src="img/fb.blanc.png" alt="Facebook"></a>
+                    <a href="https://twitter.com/" target="blank"><img src="img/twitter.blanc.png" alt="Twitter"></a>
+                </div>
+                <div id="realisation">
+                    Made with 💜 by Etienne, Julien & Vincent - © 2022
+                </div>
+            </section>
+        </footer>
+</html>

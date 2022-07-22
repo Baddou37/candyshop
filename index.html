@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Candyshop - Home</title>
+    <link rel="icon" type="image/x-icon" href="/img/logo unicorn.png">
+    <link rel="stylesheet" href="magasin.css">
+</head>
+<body>
+    <header class="header">
+        <div class="navbar">
+            <a href="index.html"><img id="logo" class="icon" name="logo" src="img/logo-final.png" alt=""></a>
+            <a href="index.html"><img class="icon" name="home" src="img/home.png" alt=""></a>
+            <a href="team.html"><img class="icon" name="team" src="img/team.png" alt=""></a>
+            <a href="panier.html"><img class="icon"name="panier" src="img/basket.png" alt=""></a>
+        </div>
+    </header>
+    <section id="panier">
+        <div id="nombre-articles"></div>
+        <div id="prix-total"></div>
+        
+        <a href="panier.html" id="bouton-acceder">Accéder</a>
+        <a type="button" value="Vider" id="bouton-vider">Vider le panier</a>
+        
+    </section>
+    <section class="intro">
+        <div class="texte_intro">
+            <h1>Bienvenue chez CandyShop 🍭</h1>
+            <h3>Une boutique pour les gouverner toutes
+                <br>
+                et dans les ténèbres...
+                <br>
+                vous guider dans la gourmandise</h3>
+        </div>
+    </section>
+    <section class="magasin">
+        <div class="articles-magasin">
+            
+            
+            <div class="ligne" id="promo-ligne">  
+                <div id="promo" class="article-mag promo">
+                    <div class="article-gauche">
+                        <img src="img/goldbearsLarge.png" alt="Goldbears">
+                        <div class="article-detail">
+                            <p class="article-prix"><span id="prix-casse">1.99</span> <span id="prix-promo"><span id="prix-goldbears">1.49</span>€</span></p>
+                            <p class="article-achat">
+                                <form action="" method="post">
+                                    <input class="article-quantite" type="number" min="0" max="99" id="quantite-goldbears">
+                                    <button type="reset" id="bouton-goldbears"><img src="img/caddy.png" alt="Panier"></button>
+                                </form>
+                            </p>
+                        </div>
+                        <div class="article-droite">
+                            Ourson d'or - poids net : 200gr
+                            <br>
+                            prix au kilo : 7,45€
+                        </div>
+                    </div>
+                    <div id="promo-text" class="article-mag promo ">
+                        <h2>L'article du moment !</h2>
+                        <h3>Voyage dans le temps</h3>
+                        <p>C'est en 1920 qu'Hans Riegel créé la société Haribo. Le lancement des Ours Danseurs, ancêtres des Ours d'Or, en 1922 fût un franc succès et permit à son créateur de continuer son rêve et de créer de nouvelles sucreries vendues à travers le monde.</p>
+                        <p>Que ce soit à déguster seul, à partager ou à offrir les confiseries sont une source de réconfort, replongeant n'importe qui dans son enfance.</p>
+                        <h3>Une offre à ne pas rater</h3>
+                        <p>Pour fêter leur anniversaire venez profitez d'une remise de 25% sur les Ours d'Or !</p>
+                    </div>
+                </div>
+            </div>
+            
+
+
+
+            <div class="ligne">
+                <div id="arlequin" class="article-mag">
+                    <div class="article-gauche">
+                        <img src="img/arlequin.png" alt="Arlequin">
+                        <div class="article-detail">
+                            <p class="article-prix"><span id="prix-arlequin">2.49</span>€</p>
+                            <p class="article-achat">
+                                <form action="" method="post">
+                                    <input class="article-quantite" type="number" min="0" max="99" id="quantite-arlequin">
+                                    <button type="reset" id="bouton-arlequin"><img src="img/caddy.png" alt="Panier"></button>
+                                </form>
+                            </p>
+                        </div>
+                    </div>
+                    <div class="article-droite">
+                        Arlequin - poids net : 180gr
+                        <br>
+                        prix au kilo : 13,83€
+                    </div>
+                </div>
+                <div id="chamallow" class="article-mag">
+                    <div class="article-gauche">
+                        <img src="img/chamallow.png" alt="Chamallow">
+                        <div class="article-detail">
+                            <p class="article-prix"><span id="prix-chamallow">3.49</span>€</p>
+                            <p class="article-achat">
+                                <form action="" method="post">
+                                    <input class="article-quantite" type="number" min="0" max="99" id="quantite-chamallow">
+                                    <button type="reset" id="bouton-chamallow"><img src="img/caddy.png" alt="Panier"></button>
+                                </form>
+                            </p>
+                        </div>
+                    </div>
+                    <div class="article-droite">
+                        Chamallow - poids net : 250gr
+                        <br>
+                        prix au kilo : 9,96€
+                    </div>
+                </div>
+                <div id="ourson" class="article-mag">
+                    <div class="article-gauche">
+                        <img src="img/ourson.png" alt="Ourson">
+                        <div class="article-detail">
+                            <p class="article-prix"><span id="prix-ourson">2.99</span>€</p>
+                            <p class="article-achat">
+                                <form action="" method="post">
+                                    <input class="article-quantite" type="number" min="0" max="99" id="quantite-ourson">
+                                    <button type="reset" id="bouton-ourson"><img src="img/caddy.png" alt="Panier"></button>
+                                </form>
+                            </p>
+                        </div>
+                    </div>
+                    <div class="article-droite">
+                        Ourson chocolat - poids net : 170gr
+                        <br>
+                        prix au kilo : 17,58€
+                    </div>
+                </div>
+            </div>
+            
+            <div class="ligne"> 
+                <div id="licorne" class="article-mag">
+                    <div class="article-gauche">
+                        <img src="img/licorne.png" alt="Licorne">
+                        <div class="article-detail">
+                            <p class="article-prix"><span id="prix-licorne">9.99</span>€</p>
+                            <p class="article-achat">
+                                <form action="" method="post">
+                                    <input class="article-quantite" type="number" min="0" max="99" id="quantite-licorne">
+                                    <button type="reset" id="bouton-licorne"><img src="img/caddy.png" alt="Panier"></button>
+                                </form>
+                            </p>
+                        </div>
+                    </div>
+                    <div class="article-droite">
+                        Licorne - poids net : 500gr
+                        <br>
+                        prix au kilo : 19,98€
+                    </div>
+                </div>
+                <div id="malabar" class="article-mag">
+                    <div class="article-gauche">
+                        <img src="img/malabar.png" alt="Malabar">
+                        <div class="article-detail">
+                            <p class="article-prix"><span id="prix-malabar">2.49</span>€</p>
+                            <p class="article-achat">
+                                <form action="" method="post">
+                                    <input class="article-quantite" type="number" min="0" max="99" id="quantite-malabar">
+                                    <button type="reset" id="bouton-malabar"><img src="img/caddy.png" alt="Panier"></button>
+                                </form>
+                            </p>
+                        </div>
+                    </div>
+                    <div class="article-droite">
+                        Malabar - poids net : 100gr
+                        <br>
+                        prix au kilo : 24,90€
+                    </div>
+                </div>
+                <div id="werthers" class="article-mag">
+                    <div class="article-gauche">
+                        <img src="img/werthers.png" alt="Werthers">
+                        <div class="article-detail">
+                            <p class="article-prix"><span id="prix-werthers">4.49</span>€</p>
+                            <p class="article-achat">
+                                <form action="" method="post">
+                                    <input class="article-quantite" type="number" min="0" max="99" id="quantite-werthers">
+                                    <button type="reset" id="bouton-werthers"><img src="img/caddy.png" alt="Panier"></button>
+                                </form>
+                            </p>
+                        </div>
+                    </div>
+                    <div class="article-droite">
+                        Licorne - poids net : 400gr
+                        <br>
+                        prix au kilo : 11,23€
+                    </div>
+                </div>
+            </div> 
+        </div>
+    </section>
+    <footer class="footer">
+        <section id="conteneur">
+            <div id="contact">
+                <h4>Venez nous voir !</h4>
+                <p>32 Avenue Marcel Dassault
+                    <br>
+                    37200 TOURS
+                </p>
+            </div>
+            <div id="mentions">
+                <h4>Mentions légales</h4>
+                <a href="#">Conditions générales de vente</a>
+                <br>
+                <a href="#">Politique de confidentialité</a>
+            </div>
+            <div id="reseaux">
+                <h4>Nous contacter</h4>
+                <a href="https://youtu.be/SRcnnId15BA?t=21" target="blank"><img src="img/yt.blanc.png" alt="Youtube"></a>
+                <a href="https://www.facebook.com/" target="blank"><img src="img/fb.blanc.png" alt="Facebook"></a>
+                <a href="https://twitter.com/" target="blank"><img src="img/twitter.blanc.png" alt="Twitter"></a>
+            </div>
+            <div id="realisation">
+                Made with 💜 by Etienne, Julien & Vincent - © 2022
+            </div>
+        </section>
+    </footer>
+<script src="magasin.js"></script>    
+</body>
+</html>
